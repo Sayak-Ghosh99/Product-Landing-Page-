@@ -54,18 +54,53 @@ nav ul li a {
 }
 
 /* Features Section */
+/* Features Section */
 #features {
-    padding: 30px;
+    padding: 50px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .feature-card {
-    display: inline-block;
-    padding: 15px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
+
+.feature-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Creative Hover Effect */
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Pricing Section */
 #pricing {
