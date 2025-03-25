@@ -147,3 +147,25 @@ footer {
     color: white;
 }
 
+/* Glowing Effect */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 126, 95, 0.5), 0 0 10px rgba(254, 180, 123, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 126, 95, 0.8), 0 0 30px rgba(254, 180, 123, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 126, 95, 0.5), 0 0 10px rgba(254, 180, 123, 0.5); }
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Apply Glow on Hover */
+.feature-card:hover {
+    transform: translateY(-10px);
+    animation: glow 1.5s infinite alternate;
+}
